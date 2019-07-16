@@ -48,11 +48,11 @@ As defined in the paper, we take advantage of transfer learning using a pretrain
    
    Use the following commands to setup the virtual environment with conda and install packages.
    
-   ```
-   conda create -n Dermatologist anaconda
-   conda activate Dermatologist
-   conda install -c pytorch pytorch torchvision
-   ```
+  ```
+  conda create -n Dermatologist anaconda
+  conda activate Dermatologist
+  conda install -c pytorch pytorch torchvision
+  ```
 
 5. Navigate to main.py and run the script, model training should begin. 
   ```
