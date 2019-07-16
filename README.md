@@ -1,5 +1,5 @@
 # Dermatologist
-Implementation of "Dermatologist-level classification of skin cancer with deep neural networks" in pytorch. 
+Implementation of "Dermatologist-level classification of skin cancer with deep neural networks" in pytorch. Refer to the aforementioned paper for program logic and motivation behind each of the concepts.
 
 ### About
 ###### Overview
