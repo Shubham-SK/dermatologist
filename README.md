@@ -37,7 +37,24 @@ As defined in the paper, we take advantage of transfer learning using a pretrain
   mv train.zip valid.zip test.zip data
   ```
   
-4. Navigate to main.py and run the script, model training should begin. 
+4. Install necessary dependencies.
+
+   Project hinges on the use of the anaconda package manager, this would be the preferred method of package installation. However, you may use pip to install the packages listed in both requirements.txt and below.
+   
+   - pytorch
+   - torchvision
+   - numpy
+   - PIL/Pillow
+   
+   Use the following commands to setup the virtual environment with conda and install packages.
+   
+   ```
+   conda create -n Dermatologist anaconda
+   conda activate Dermatologist
+   conda install -c pytorch pytorch torchvision
+   ```
+
+5. Navigate to main.py and run the script, model training should begin. 
   ```
   cd ../python
   python3 main.py
