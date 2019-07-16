@@ -15,11 +15,9 @@ As defined in the paper, we take advantage of transfer learning using a pretrain
   ```
 2. Download data from:
 
-<ul>
-<li><a>https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/train.zip</a>,</li>
-<li><a>https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/valid.zip</a>,</li>
-<li><a>https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/test.zip</a>.</li>
-  </ul>
+- https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/train.zip
+- https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/valid.zip
+- https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/test.zip
   
   You may either manually download the zip files or do it with the following commands:
   
