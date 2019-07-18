@@ -15,7 +15,7 @@ from torchvision import models
 import torch.nn as nn
 
 ### Importing the model (inception v3 CNN) pretrained on Imagenet
-Classifier_net = models.inception_v3()
+Classifier_net = models.inception_v3(aux_logits=False)
 
 ### Modifying the fully connected layers to fit our dataset instead of imagenet
 # Note: Modify final fully connected network by using nn.Sequential() to define
