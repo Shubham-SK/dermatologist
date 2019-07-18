@@ -82,7 +82,7 @@ def train(epochs, loaders, model, optimizer, criterion, device, save_path, verbo
 ### Testing method
 def test(loaders, model, criterion, device, verbose=True):
     """
-    Name: train
+    Name: test
     
     Parameters: 5
     _____________
