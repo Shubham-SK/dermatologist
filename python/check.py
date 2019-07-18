@@ -102,7 +102,7 @@ def test(loaders, model, criterion, device, verbose=True):
     for batch_idx, (feature, label) in enumerate(loaders['test']):
         feature, label = feature.to(device), label.to(device)
 
-        log_ps, _ = model(feature)
+        log_ps = model(feature)
         loss = criterion(log_ps, label)
 
         test_loss += (1 / (batch_idx + 1)) * (loss.item() - test_loss)
