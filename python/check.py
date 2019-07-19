@@ -47,8 +47,10 @@ def train(epochs, loaders, model, optimizer, criterion, device, save_path, verbo
 
             optimizer.zero_grad()
 
-            log_ps, _ = model(feature)
-            loss = criterion(log_ps, label)
+            log_ps, aux_outputs = model(feature)
+            loss1 = criterion(log_ps, label)
+            loss2 = criterion(aux_outputs, label)
+            loss = loss1 + 0.4 * loss2
 
             loss.backward()
             optimizer.step()
