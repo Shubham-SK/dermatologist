@@ -23,7 +23,7 @@ from check import train, test
 # print(len(loaders['train']), len(loaders['valid']), len(loaders['test']))
 
 ### Tunable Hyperparameters (to change fully connected layer, modify model.py)
-lr = 0.003
+lr = 0.001
 epochs = 100
 
 ### Optimizer and Loss definition
