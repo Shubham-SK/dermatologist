@@ -107,8 +107,8 @@ def test(loaders, model, criterion, device, verbose=True):
 
         test_loss += (1 / (batch_idx + 1)) * (loss.item() - test_loss)
         pred = log_ps.data.max(1, keepdim=True)[1]
-        correct += np.sum(np.squeeze(pred.eq(feature.data.view_as(pred))).cpu().numpy())
-        total += feature.size[0]
+        correct += np.sum((label.t() == pred).cpu().numpy())
+        total += feature.shape[0]
 
     if verbose:
         print('Test Loss: {}\n'.format(test_loss))
