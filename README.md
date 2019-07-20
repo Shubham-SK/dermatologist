@@ -60,4 +60,5 @@ As defined in the paper, we take advantage of transfer learning using a pretrain
 
 Note: I am currently working on developing a web/smartphone application to make the project more user friendly. Also, I am training the model and will upload a "Classifier-net.pt" containing the model state dictionary so training isn't necessary for testing.
 
-Update: Classifier-net.pt has been uploaded, work is being done to test performance.
+Update 1: Classifier-net.pt has been uploaded, work is being done to test performance.
+Update 2: Performance results show that the model is able to classify the skin cancer with 68% accuracy. This is certainly better than guessing, but is far from "state-of-the-art" level of classification. I am investigating the model with more depth and tweaking hyperparameters to optimize accuracy.
