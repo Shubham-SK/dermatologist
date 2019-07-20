@@ -23,8 +23,8 @@ from check import train, test
 # print(len(loaders['train']), len(loaders['valid']), len(loaders['test']))
 
 ### Tunable Hyperparameters (to change fully connected layer, modify model.py)
-lr = 0.001
-epochs = 100
+lr = 0.0001
+epochs = 40
 
 ### Optimizer and Loss definition
 model_criterion = nn.CrossEntropyLoss()

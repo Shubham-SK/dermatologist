@@ -22,7 +22,7 @@ train_transforms = transforms.Compose([
         transforms.Resize((299, 299)),
         transforms.RandomHorizontalFlip(p=0.5),
         transforms.RandomVerticalFlip(p=0.5),
-        transforms.RandomRotation(10),
+        transforms.RandomRotation(20),
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406],
                              std=[0.229, 0.224, 0.225])
@@ -42,9 +42,9 @@ testset = datasets.ImageFolder('../data/test/', transform=check_transforms)
 validset = datasets.ImageFolder('../data/valid/', transform=check_transforms)
 
 ### Creating batches of iterables from the datasets
-trainloader = DataLoader(trainset, batch_size=24, shuffle=True)
-testloader = DataLoader(testset, batch_size=24, shuffle=True)
-validloader = DataLoader(validset, batch_size=24, shuffle=True)
+trainloader = DataLoader(trainset, batch_size=64, shuffle=True)
+testloader = DataLoader(testset, batch_size=64, shuffle=True)
+validloader = DataLoader(validset, batch_size=64, shuffle=True)
 
 loaders = {'train':trainloader, 'test':testloader, 'valid':validloader}
 
