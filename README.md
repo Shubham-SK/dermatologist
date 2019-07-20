@@ -59,3 +59,5 @@ As defined in the paper, we take advantage of transfer learning using a pretrain
   ```
 
 Note: I am currently working on developing a web/smartphone application to make the project more user friendly. Also, I am training the model and will upload a "Classifier-net.pt" containing the model state dictionary so training isn't necessary for testing.
+
+Update: Classifier-net.pt has been uploaded, work is being done to test performance.
