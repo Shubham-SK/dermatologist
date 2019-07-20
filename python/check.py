@@ -33,7 +33,7 @@ def train(epochs, loaders, model, optimizer, criterion, device, save_path, verbo
     ### Moving model to hardware accelerator
     model.to(device)
 
-    valid_loss_min = np.Inf
+    valid_loss_min = 0.8294758399327596 #Lowest Achieved.
 
     ### Training and Validation Loop
     for e in range(epochs):
@@ -108,9 +108,10 @@ def test(loaders, model, criterion, device, verbose=True):
         loss = criterion(log_ps, label)
 
         test_loss += (1 / (batch_idx + 1)) * (loss.item() - test_loss)
+
         pred = log_ps.data.max(1, keepdim=True)[1]
-        correct += np.sum((label.t() == pred).cpu().numpy())
-        total += feature.shape[0]
+        correct += np.sum((label.t()[0] == pred).cpu().numpy())
+        total += label.shape[0]
 
     if verbose:
         print('Test Loss: {}\n'.format(test_loss))
