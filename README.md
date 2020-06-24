@@ -37,12 +37,14 @@ ___
 4. Install necessary dependencies.
 
    Project hinges on the use of the anaconda package manager, this would be the preferred method of package installation. However, you may use pip to install the packages listed in both requirements.txt and below.
-   
-   - pytorch
-   - torchvision
-   - numpy
-   - PIL/Pillow
-   
+ 
+<ul>
+   <li> pytorch </li>
+   <li> torchvision </li>
+   <li> numpy </li>
+   <li> PIL/Pillow </li>
+</ul>
+  
    Use the following commands to setup the virtual environment with conda and install packages.
    
    ```
