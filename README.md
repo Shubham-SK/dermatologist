@@ -1,13 +1,12 @@
 # Dermatologist
-Implementation of "Dermatologist-level classification of skin cancer with deep neural networks" in pytorch. Refer to the aforementioned paper for program logic and motivation behind each of the concepts.
+Implementation of [dermatologist-level classification of skin cancer with deep neural networks](https://www.nature.com/articles/nature21056) in pytorch. Refer to the aforementioned paper for program logic and motivation behind each of the concepts.
 
+___
 ### About
-###### Overview
 As defined in the paper, we take advantage of transfer learning using a pretrained (On ImageNet) CNN, specifically Google's **Inception V3**. The classifier predicts images of three classes, namely, melanoma, nevus, and seborrheic_keratosis. There are 754 more classes that the original researchers have defined, but the data provided only permitted three classes.
 
+___
 ### Usage
-
-###### Running the program
 1. Clone the repository
   ```
   git clone https://github.com/Shubham-SK/dermatologist.git
